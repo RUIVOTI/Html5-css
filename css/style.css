@@ -2,7 +2,7 @@
 Configs Gerais 
 ----------------------------------------------------------*/
 body{
-	background:url(../img/fundo-site.jpg );
+	background:url (../img/tema-site.jpg);
 	color:#868686; 
 	font-family: "Open Sans", Helvetica, sans-serif, arial; 
 	font-size: 18px; /* 18px a· 16px = 1.125em */
@@ -136,7 +136,7 @@ nav{
 	width: 95%;
 }
 
-.desktop, .suporte {
+.desktop, .suporte,.manutencao{
 	float: left;
 	height: 350px;
 	position: relative;
@@ -152,7 +152,10 @@ nav{
 .suporte{
 	background-color:
 }
-.meio .desktop figure, .meio .suporte figure, .meio{
+.manutencao{
+	margin-right:0px;
+}
+.meio .desktop figure, .meio .suporte figure, .meio .manutencao figure{
 	margin: 15px auto 0px auto;
 	width: 69.444%;
 }
@@ -170,7 +173,7 @@ nav{
 	position: absolute;
 	max-width: 100%;
 	text-align:justify;
-	top: 210px;
+	top: 350px;
 }
 span.botao a{
 	padding: 2px 3.333%;
@@ -180,6 +183,7 @@ span.botao a{
 }
 .suporte span.botao a{
 }
+.manutencao span.botao a{
 }
 span.botao{
 	font-size: 1.111em;
@@ -208,6 +212,66 @@ footer{
 }
 .desenvolvedor figure{
 	width:100%;
+}
+.meio-contato{
+	padding: 2.5%;
+	width: 95%;
+}
+.meio-contato h3{
+	color: #ffffff;
+	font-size: 1.778em;
+	font-weight: 600;
+	letter-spacing: -0.0625em;
+	margin-bottom: 10px;
+	margin-top: -15px;
+	text-shadow:none;
+	text-align: center;
+}
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+	color: #000;
+	text-shadow:none;
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+	font-weight: 600;
+}
+
+input, textarea {
+  font: 1em "Open Sans", sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.button {
+  padding-left: 90px; 
+}
+button {
+  margin-left: .5em;
+}
+.volta-topo{
+	text-align: right;
+	width: 100%;
+	margin-bottom: 30px;
 }
 
 @media screen and (max-width: 999px){
@@ -248,11 +312,11 @@ footer{
 		padding: 3.90%;
 		width: 92.18%;
 	}
-	.desktop, .suporte {
+	.desktop, .suporte, .manutencao{
 		width: 31.25%;
 		height:350px;
 	}
-	.meio .desktop figure, .meio .suporte figure{
+	.meio .desktop figure, .meio .suporte figure, .meio .manutencao figure{
 		width: 62.25%
 	}
 	.meio img{
@@ -351,12 +415,12 @@ footer{
 		padding:0;
 		width: 100%;
 	}
-	.meio .desktop, .meio .suporte{
+	.meio .desktop, .meio .suporte, .meio .manutencao{
 		float: none;
 		height: 160px;
 		width: 100%;
 	}
-	.meio .desktop figure, .meio .suporte figure{
+	.meio .desktop figure, .meio .suporte figure, .manutencao figure{
 		float: left;
 		height: 160px;
 		margin:0;
@@ -368,7 +432,7 @@ footer{
 		margin-top: 40px;
 		width: 46.875%
 	}
-	.meio .desktop figure img, .meio .suporte figure img {
+	.meio .desktop figure img, .meio .suporte figure img, .meio .manutencao figure img{
 		height: 125px;
 		margin-top: 15px;
 		width: 86.274%;
@@ -430,12 +494,12 @@ footer{
 		font-size:0.777777778em;
 	}
 	/* meio retirar texto e aumentar a foto */
-	.meio .desktop, .meio .suporte {
+	.meio .desktop, .meio .suporte, .meio .manutencao{
 		float:none;
 		height:160px;
 		width:100%;
 	}
-	.meio .desktop figure, .meio .suporte figure {
+	.meio .desktop figure, .meio .suporte figure, .meio .manutencao figure{
 		float:left;
 		width:100%;
 	}
